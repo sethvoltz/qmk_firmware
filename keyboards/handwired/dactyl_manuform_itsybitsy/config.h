@@ -24,9 +24,7 @@ see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    sethvoltz
-
-// defined in subfolder
-#define DESCRIPTION     A split keyboard for the awesome makers
+#define DESCRIPTION     Hand-wired split keyboard for the mentally insane
 
 /* mouse config */
 #define MOUSEKEY_INTERVAL       20
@@ -38,15 +36,13 @@ see <http://www.gnu.org/licenses/>.
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* serial.c configuration for split keyboard */
+/* Split keyboard configuration */
 // #define SOFT_SERIAL_PIN D0
 // #define USE_SERIAL
 #define USE_I2C
-
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 #define EE_HANDS
-// Rows are doubled-up
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 // #define LOCKING_SUPPORT_ENABLE
@@ -56,12 +52,12 @@ see <http://www.gnu.org/licenses/>.
 /* Enables This makes it easier for fast typists to use dual-function keys */
 #define PERMISSIVE_HOLD
 
-/* key matrix size */
-// Rows are doubled-up
+/* Key matrix size */
+// Rows are doubled-up for split keyboards
 #define MATRIX_ROWS 12
 #define MATRIX_COLS 6
 
-// wiring of each half
+// Wiring of each half
 #define MATRIX_COL_PINS { D6, B7, B6, B5, E6, C6 }
 #define MATRIX_ROW_PINS { F7, F6, F5, F4, F1, F0 }
 
@@ -69,10 +65,10 @@ see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN B2
 #define RGBLED_NUM 12
 
-/* define if matrix has ghost */
+/* If matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
-/* number of backlight levels */
+/* Number of backlight levels */
 // #define BACKLIGHT_LEVELS 3
 
 /*
@@ -87,8 +83,8 @@ see <http://www.gnu.org/licenses/>.
 // #define NO_PRINT
 
 /* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
+// #define NO_ACTION_LAYER
+// #define NO_ACTION_TAPPING
+// #define NO_ACTION_ONESHOT
+// #define NO_ACTION_MACRO
+// #define NO_ACTION_FUNCTION
