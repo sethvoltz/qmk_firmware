@@ -15,6 +15,8 @@ enum custom_keycodes {
 
 #define TAB_LFT LSFT(LGUI(KC_LBRC))
 #define TAB_RHT LSFT(LGUI(KC_RBRC))
+#define MTB_LFT LCTL(LGUI(KC_LEFT))
+#define MTB_RHT LCTL(LGUI(KC_RGHT))
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -46,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,  KC_UP  ,  _______,  KC_LBRC,                              KC_RBRC,  _______,  _______,  _______,  KC_BRIU,  KC_VOLU,
     _______,  _______,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_LPRN,                              KC_RPRN,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_BRID,  KC_VOLD,
     _______,  _______,  _______,  _______,  _______,  KC_MINS,                              KC_UNDS,  _______,  _______,  _______,  _______,  KC_MUTE,
-                        TAB_LFT,  TAB_RHT,                                                                      _______,  _______,
+                        TAB_LFT,  TAB_RHT,                                                                      MTB_LFT,  MTB_RHT,
                                                       _______,  KC_BSPC,          KC_DEL,   _______,
                                                       _______,  _______,          _______,  _______,
                                                       _______,  _______,          _______,  _______
